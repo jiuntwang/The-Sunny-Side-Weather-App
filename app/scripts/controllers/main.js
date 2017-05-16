@@ -8,7 +8,7 @@
  * Controller of the theSunnySideWeatherAppApp
  */
 angular.module('theSunnySideWeatherAppApp')
-  .controller('MainCtrl', function ($scope, citysearch) {
+.controller('MainCtrl', function ($scope, citysearch) {
     $scope.citiesFound = citysearch.find();
 
     $scope.findCities = function(){

@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: citysearch', function () {
+describe('Service: cityserach', function () {
 
   // load the service's module
   beforeEach(module('theSunnySideWeatherAppApp'));
 
   // instantiate service
-  var citysearch;
-  beforeEach(inject(function (_citysearch_) {
-    citysearch = _citysearch_;
+  var cityserach;
+  beforeEach(inject(function (_cityserach_) {
+    cityserach = _cityserach_;
   }));
 
   it('should do something', function () {
-    expect(!!citysearch).toBe(true);
+    expect(!!cityserach).toBe(true);
   });
 
 });
