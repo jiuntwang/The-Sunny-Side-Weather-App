@@ -8,14 +8,12 @@
  * Controller of the theSunnySideWeatherAppApp
  */
 angular.module('theSunnySideWeatherAppApp')
-  .controller('MainCtrl', function ($scope, citysearch, $localStorage) {
-      $scope.citiesFound = citysearch.find();
-      $scope.storage = $localStorage;
+  .controller('MainCtrl', function ($scope, current) {
+      $scope.current = current.query();
 
-      $scope.findCities = function(){
-        $scope.citiesFound = citysearch.find({
-            query: $scope.location
+      $scope.refreshCurrent = function(){
+        $scope.current = current.query({
+            location: $scope.location
         });
-        $scope.searchQuery = $scope.location;
     };
   });
