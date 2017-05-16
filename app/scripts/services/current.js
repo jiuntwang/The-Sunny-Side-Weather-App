@@ -18,7 +18,7 @@ angular.module('theSunnySideWeatherAppApp')
       query: {
         method:'GET',
         params:{
-          location: 'Seattle,us'
+          cityID: '4717560' // Paris, France ID
         },
         isArray:false
       }
